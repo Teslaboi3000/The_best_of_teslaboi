@@ -16,9 +16,17 @@ while True:
     program_choice = input('Write the name of the program you want to use: ').lower()
     if program_choice == 'choice helper':
         choice_helper()
+        print('''
+        ''')
     elif program_choice == 'magic text':
         magic_text()
+        print('''
+        ''')
     elif program_choice == 'morse translator':
         morse_translator()
+        print('''
+        ''')
     elif program_choice == 'writer':
         writer()
+        print('''
+        ''')
