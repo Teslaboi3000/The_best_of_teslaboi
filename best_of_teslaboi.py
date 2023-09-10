@@ -3,7 +3,8 @@ from magic_text import magic_text
 from morse_translator import morse_translator
 from writer import writer
 
-while True:
+i = 5
+while i < 10:
     print('''|The Best Of Teslaboi!|
             All of Tesla's cool programs in one!
         ''')
@@ -12,9 +13,11 @@ while True:
             Magic Text
             Morse Translator
             Writer
+          Or you can write stop to close the program!
         ''')
-    program_choice = input('Write the name of the program you want to use: ').lower()
-    if program_choice == 'choice helper':
+    program_choice = input('Write the name of the feature you want to use: ').lower()
+    
+    if  program_choice == 'choice helper':
         choice_helper()
         print('''
         ''')
@@ -30,3 +33,4 @@ while True:
         writer()
         print('''
         ''')
+    
