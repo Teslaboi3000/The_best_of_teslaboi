@@ -6,7 +6,7 @@ def magic_text():
             by Teslaboi_3000| You can start with your questions! Write stop to close''')
       while i < 10:
             user_input = input("> ")
-            answers = ["Impossible!", "Nuh uh", "Maybe!", "Absolutley yes", "Yuh uh"]
+            answers = ["I don't think so", "Use immagination!", "Too simp", "In your dreams maybe!", "Maybe! (if you're a baby)", "Impossible!", "Nuh uh", "Maybe!", "Absolutley yes", "Yuh uh"]
             answer = random.choice(answers)
             print(answer)
             if user_input == 'stop':
