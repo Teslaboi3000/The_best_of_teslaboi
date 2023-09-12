@@ -1,6 +1,6 @@
 def writer():
-    print('''Welcome to Writer! A useless but cool program!
-        ''')
+    print("Welcome to Writer! A simple but useful program!\n")
+
     message = input("What do you want to write? ")
     number_of_times = int(input("How many times do you want to write it? "))
 
@@ -8,7 +8,8 @@ def writer():
 
     if visible_percentage == 1:
         for i in range(number_of_times + 1):
-            print(f"{message} {i}%")
+            output = (i / number_of_times) * 100
+            print(f"{message} {int(output)}%")
     elif visible_percentage == 0:
         for i in range(number_of_times):
-            print(f"{message}")
+            print(message)
