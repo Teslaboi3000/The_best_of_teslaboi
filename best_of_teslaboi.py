@@ -13,7 +13,7 @@ while True:
             3) Morse Translator
             4) Writer
         ''')
-    program_choice = input('Write the number of the program you want to use in this list: ').lower()
+    program_choice = input('Write the number of the program you want to use in this list (or write exit to close the program): ').lower()
     if program_choice == '1':
         choice_helper()
     elif program_choice == '2':
@@ -22,3 +22,5 @@ while True:
         morse_translator()
     elif program_choice == '4':
         writer()
+    elif program_choice == 'exit':
+        exit()
