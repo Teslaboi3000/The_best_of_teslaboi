@@ -3,10 +3,9 @@ from magic_text import magic_text
 from morse_translator import morse_translator
 from writer import writer
 
+
+print("|The Best Of Teslaboi!|\nAll of Tesla's cool programs in one!\n")
 while True:
-    print('''|The Best Of Teslaboi!|
-            All of Tesla's cool programs in one!
-        ''')
     print('''There are 4 programs to choose from:
             1) Choice Helper
             2) Magic Text
@@ -17,7 +16,11 @@ while True:
     if program_choice == '1':
         choice_helper()
     elif program_choice == '2':
-        magic_text()
+        magic_text_language = input("In what language do you want to use Magic Text? 1)English > ")
+        if magic_text_language == "1":
+            magic_text()
+        else:
+            print("Uhm, still gotta learn that language.")
     elif program_choice == '3':
         morse_translator()
     elif program_choice == '4':
